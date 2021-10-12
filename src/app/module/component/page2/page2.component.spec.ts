@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WrapperComponent } from './wrapper.component';
+import { Page2Component } from './page2.component';
 
-describe('WrapperComponent', () => {
-  let component: WrapperComponent;
-  let fixture: ComponentFixture<WrapperComponent>;
+describe('Page2Component', () => {
+  let component: Page2Component;
+  let fixture: ComponentFixture<Page2Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WrapperComponent ]
+      declarations: [ Page2Component ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(WrapperComponent);
+    fixture = TestBed.createComponent(Page2Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

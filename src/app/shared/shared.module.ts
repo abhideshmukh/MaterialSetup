@@ -1,17 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { WrapperComponent } from './component/wrapper/wrapper.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import { AppRoutingModule } from '../app-routing.module';
+import { MainModule } from '../module/main.module';
+import { MainRoutingModule } from '../module/main-routing.module';
 
 @NgModule({
-  declarations: [
-    WrapperComponent
-  ],
+  declarations: [],
   imports: [
+    MainRoutingModule,
+    AppRoutingModule,
     CommonModule,
+    MainModule,
     MatSidenavModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatListModule,
+    MatIconModule
   ]
 })
 export class SharedModule { }
